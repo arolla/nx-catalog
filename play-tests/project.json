@@ -1,0 +1,17 @@
+{
+  "name": "play-tests",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "play-tests/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx-extend/playwright:test",
+      "options": {}
+    },
+    "codegen": {
+      "executor": "@nx-extend/playwright:codegen",
+      "options": {}
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,64 @@
+{
+  "name": "nest-book",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "nest-book/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/nest-book",
+        "main": "nest-book/src/main.ts",
+        "tsConfig": "nest-book/tsconfig.app.json",
+        "assets": ["nest-book/src/assets"],
+        "isolatedConfig": true,
+        "webpackConfig": "nest-book/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "nest-book:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "nest-book:build:development"
+        },
+        "production": {
+          "buildTarget": "nest-book:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["nest-book/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "nest-book/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
