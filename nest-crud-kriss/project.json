@@ -1,0 +1,64 @@
+{
+  "name": "nest-crud-kriss",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "nest-crud-kriss/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/nest-crud-kriss",
+        "main": "nest-crud-kriss/src/main.ts",
+        "tsConfig": "nest-crud-kriss/tsconfig.app.json",
+        "assets": ["nest-crud-kriss/src/assets"],
+        "isolatedConfig": true,
+        "webpackConfig": "nest-crud-kriss/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "nest-crud-kriss:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "nest-crud-kriss:build:development"
+        },
+        "production": {
+          "buildTarget": "nest-crud-kriss:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["nest-crud-kriss/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "nest-crud-kriss/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
