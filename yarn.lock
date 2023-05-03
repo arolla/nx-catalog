@@ -2991,7 +2991,7 @@
     tsconfig-paths-webpack-plugin "4.0.0"
     typescript "^4.0.0"
 
-"@nx/angular@16.0.1", "@nx/angular@^16.0.1":
+"@nx/angular@16.0.1":
   version "16.0.1"
   resolved "https://registry.yarnpkg.com/@nx/angular/-/angular-16.0.1.tgz#0c039e711f8b276f929323190d589e133aa08fbd"
   integrity sha512-ZjpfnWX4mKz6R0VQDPSOT4mXqRt4CS5tZClLC22Uz4LBw6qvS/YYEzFQ53qeBRTYGxniA9H/6SwflPbY44uX1g==
@@ -3134,7 +3134,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nx/nest@16.0.1", "@nx/nest@^16.0.1":
+"@nx/nest@16.0.1":
   version "16.0.1"
   resolved "https://registry.yarnpkg.com/@nx/nest/-/nest-16.0.1.tgz#98ec40c334f7e995b65812ee77daa4b4a9953412"
   integrity sha512-eOdfubrp18d8V6j3auqFIvNGCmaO3ldHJHEA09gdA1giNNVEmh2gcQpD0gLot7ytZaBox0tuzslvfohQZZSCQw==
@@ -3221,7 +3221,7 @@
     file-loader "^6.2.0"
     minimatch "3.0.5"
 
-"@nx/storybook@16.0.1", "@nx/storybook@^16.0.1":
+"@nx/storybook@16.0.1":
   version "16.0.1"
   resolved "https://registry.yarnpkg.com/@nx/storybook/-/storybook-16.0.1.tgz#a9a4dfd3df6c642051a95bbb8927511d4ec772f4"
   integrity sha512-5CG9SjgHotAGnX1S2VujEB5oSLYUAK4nUP+/hdYPtjyfb2XiqfosgDwOyqUWaXgbbtCAAkwkjLL3kouh8YGbGQ==

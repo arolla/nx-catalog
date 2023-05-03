@@ -51,7 +51,7 @@ function ensureUpToDateInstallation() {
                 name: 'nx-installation',
                 devDependencies: Object.assign({ nx: nxJson.installation.version }, nxJson.installation.plugins),
             }));
-            cp.execSync('npm i', {
+            cp.execSync('npm i --legacy-peer-deps', {
                 cwd: path.dirname(installationPath),
                 stdio: 'inherit',
             });

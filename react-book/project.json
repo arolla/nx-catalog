@@ -54,7 +54,7 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/react-book"],
+      "outputs": ["{workspaceRoot}/coverage/react-book"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../coverage/react-book"
