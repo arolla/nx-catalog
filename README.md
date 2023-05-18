@@ -40,3 +40,9 @@ How to:
 
 `yarn add -D @nx-extend/playwright`
 `nx g @nx-extend/playwright:init`
+
+## Creation d'un composant react dans react-book en CDD.
+
+Lancer le storybook sur le projet react-book: 
+`npx nx storybook react-book`
+
