@@ -46,3 +46,9 @@ How to:
 Lancer le storybook sur le projet react-book: 
 `npx nx storybook react-book`
 
+Lancer le projet tu lances la commande :
+`npx nx serve react-book`
+
+Lancer les tests :
+`npx nx test react-book`
+
