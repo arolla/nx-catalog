@@ -4,3 +4,6 @@
 .angular
 nx-arolla-catalog/
 node_modules/
+.vscode
+.idea
+dist/
