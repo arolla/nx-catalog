@@ -12,10 +12,12 @@ import { ConnectionModule } from './connection/connection.module';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'Yxrhyrup1990!!',
+      password: '',
       database: 'crud_nest',
       entities: [__dirname + '/../**/*.entity.{js,ts}'],
       synchronize: true,
+      autoLoadEntities:true
+
     }),
     TodosModule,
     ConnectionModule,

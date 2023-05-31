@@ -1,7 +1,6 @@
-import { Body, Controller, Post } from '@nestjs/common';
-import { ConnectionService } from './connection.service';
-import { UserDTO } from '../dto/UserDTO';
-import { LoginDTO } from '../dto/LoginDTO';
+import {Body, Controller, Post} from '@nestjs/common';
+import {ConnectionService} from './connection.service';
+import {UserDTO} from '../dto/UserDTO';
 
 @Controller('connection')
 export class ConnectionController {

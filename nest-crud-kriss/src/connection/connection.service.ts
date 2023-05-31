@@ -1,14 +1,9 @@
-import {
-  Injectable,
-  NotFoundException,
-  UnauthorizedException,
-} from '@nestjs/common';
-import { UserDTO } from '../dto/UserDTO';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
-import { User } from '../entity/User.entity';
-import * as bcrypt from 'bcrypt';
-import { LoginDTO } from '../dto/LoginDTO';
+import {Injectable, NotFoundException, UnauthorizedException,} from '@nestjs/common';
+import {UserDTO} from '../dto/UserDTO';
+import {InjectRepository} from '@nestjs/typeorm';
+import {Repository} from 'typeorm';
+import {User} from '../entity/User.entity';
+import {LoginDTO} from '../dto/LoginDTO';
 
 @Injectable()
 export class ConnectionService {
