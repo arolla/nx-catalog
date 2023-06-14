@@ -5,12 +5,14 @@ const config = {
     name: '@storybook/react-vite',
     options: {
       builder: {
-        viteConfigPath: 'react-book/vite.config.ts',
-      },
-    },
+        viteConfigPath: 'react-book/vite.config.ts'
+      }
+    }
   },
+  docs: {
+    autodocs: true
+  }
 };
-
 export default config;
 
 // To customize your Vite configuration you can use the viteFinal field.
