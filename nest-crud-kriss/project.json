@@ -14,7 +14,6 @@
         "outputPath": "dist/nest-crud-kriss",
         "main": "nest-crud-kriss/src/main.ts",
         "tsConfig": "nest-crud-kriss/tsconfig.app.json",
-        "assets": ["nest-crud-kriss/src/assets"],
         "isolatedConfig": true,
         "webpackConfig": "nest-crud-kriss/webpack.config.js"
       },
