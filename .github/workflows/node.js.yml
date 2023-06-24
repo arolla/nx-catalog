@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Nx set SHAs
-      - uses: nrwl/nx-set-shas@v3.0.1
+        uses: nrwl/nx-set-shas@v3.0.1
       - name: Install dependencies
       - run: |
           npm install --global nx@latest
