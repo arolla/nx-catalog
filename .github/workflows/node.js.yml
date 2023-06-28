@@ -15,7 +15,7 @@ jobs:
       - name: Nx set SHAs
         uses: nrwl/nx-set-shas@v3.0.1
       - name: Install dependencies
-      - run: |
+        run: |
           npm install --global nx@latest
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
