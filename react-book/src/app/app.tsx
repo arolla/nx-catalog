@@ -1,12 +1,11 @@
+import Header from '../components/header/Header';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
-
-import NxWelcome from './nx-welcome';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="react-book" />
+      <Header title='hello' person='Jérémy' />
     </div>
   );
 }
