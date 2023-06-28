@@ -1,0 +1,33 @@
+{
+  "name": "react-todo-kriss-e2e",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "react-todo-kriss-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "react-todo-kriss-e2e/cypress.config.ts",
+        "devServerTarget": "react-todo-kriss:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "react-todo-kriss:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "react-todo-kriss:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["react-todo-kriss-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["react-todo-kriss"]
+}
