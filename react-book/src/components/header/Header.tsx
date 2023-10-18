@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 interface Props {
     title: string
-    url: string
+    url?: string
     person: string
 }
 
